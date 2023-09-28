@@ -1,16 +1,27 @@
 .parent {
-    position: relative;
-    left: 35rem;
-    top: 8rem;
-    background-color: gainsboro;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: aliceblue;
     height: 25rem;
     width: 25rem;
+    border: 1rem solid;
+    border-color: deepskyblue;
+}
+
+.text {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+img {
+    height: 100%;
+    width: 100%;
 }
 
 .child {
-    background-color: black;
     height: 50%;
-    border-radius: 100%;
     width: 50%;
     animation: left-to-right 3s ease-in forwards infinite;
 }
@@ -22,47 +33,38 @@
 @keyframes left-to-right {
 
     0% {
-        background-color: rgb(255, 60, 60);
         transform: translateX(0%) translateY(0%);
     }
 
     12.5% {
-        background-color: rgb(255, 120, 2);
         transform: translateY(50%) translateX(50%);
     }
 
     25% {
-        background-color: rgb(255, 204, 0);
         transform: translateX(0%) translateY(100%);
     }
 
     37.5% {
-        background-color: rgb(145, 255, 2);
         transform: translateX(50%) translateY(50%);
     }
 
     50% {
-        background-color: rgb(0, 255, 183);
         transform: translateX(100%) translateY(100%);
     }
 
     62.5% {
-        background-color: rgb(0, 157, 255);
         transform: translateX(50%) translateY(50%);
     }
 
     75% {
-        background-color: rgb(0, 68, 255);
         transform: translateX(100%) translateY(0%);
     }
 
     87.5% {
-        background-color: rgb(179, 0, 255);
         transform: translateX(50%) translateY(50%);
     }
 
     100% {
-        background-color: rgb(255, 0, 68);
         transform: translateX(0%) translateY(0%);
     }
 }
